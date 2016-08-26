@@ -32,4 +32,4 @@ To run, type into terminal:
 iPython notebook
 ```
 
-go to this directory and run PlaysCatch.py script in kernel 
+go to this directory and run PlayCatchGame.py script in kernel 

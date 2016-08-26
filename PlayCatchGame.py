@@ -21,7 +21,6 @@ winCount = 0
 loseCount = 0
 numberOfGames = 0
 
-
 ground = 1
 plot = pl.figure(figsize=(12,12))
 axis = plot.add_subplot(111, aspect='equal')
@@ -30,8 +29,6 @@ axis.set_ylim([0, 12])
 
 # Add ops to save and restore all the variables.
 saver = tf.train.Saver()
-
-temp = 1
 
 def drawState(fruitRow, fruitColumn, basket):
   global gridSize
@@ -94,8 +91,6 @@ with tf.Session() as sess:
       currentState = nextState
       isGameOver = gameOver
       drawState(fruitRow, fruitColumn, basket)
-      plot.savefig("sample_"+ str(temp) + ".png")
-      temp = temp + 1
       time.sleep(0.4)
 
 display.clear_output(wait=True)
